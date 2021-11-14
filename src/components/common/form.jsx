@@ -33,7 +33,7 @@ class Form extends React.Component {
     this.setState({ errors: errors || {} });
     if (errors) return;
 
-    console.log("submitted");
+    this.doSubmit();
   };
   handleChange = ({ currentTarget: input }) => {
     const errors = { ...this.state.errors };
