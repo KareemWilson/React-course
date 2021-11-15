@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-const Select = ({ label, defaultValue, array, name, error, ...rest }) => {
+const Select = ({ label, defaultText, array, name, error, ...rest }) => {
   return (
     <div className="form-group">
       <label htmlFor="">{label}</label>
@@ -9,10 +9,11 @@ const Select = ({ label, defaultValue, array, name, error, ...rest }) => {
         className="form-select form-control"
         aria-label="Default select example"
         name={name}
-        defaultValue={""}
         {...rest}
       >
-        <option value={""}>{defaultValue}</option>
+        <option selected value="">
+          {defaultText}
+        </option>
         {array.map((item) => (
           <option key={item._id} value={item._id}>
             {item.name}

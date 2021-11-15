@@ -31,7 +31,7 @@ class MovieForm extends Form {
   }
 
   doSubmit() {
-    console.log("submitttttt");
+    console.log(this.props);
   }
 
   render() {
