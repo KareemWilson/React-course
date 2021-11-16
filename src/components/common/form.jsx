@@ -68,7 +68,7 @@ class Form extends React.Component {
       />
     );
   }
-  renderSelect(label, defaultText, array, name) {
+  renderSelect(name, label, defaultText, array ) {
     const { errors } = this.state;
     return (
       <Select

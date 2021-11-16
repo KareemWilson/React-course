@@ -11,9 +11,7 @@ const Select = ({ label, defaultText, array, name, error, ...rest }) => {
         name={name}
         {...rest}
       >
-        <option selected value="">
-          {defaultText}
-        </option>
+        <option value="">{defaultText}</option>
         {array.map((item) => (
           <option key={item._id} value={item._id}>
             {item.name}
